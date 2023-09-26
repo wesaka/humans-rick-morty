@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rick y Morty: Identificador de Humanos - Frontend
 
-## Getting Started
+El frontend es la cara visible de nuestra herramienta para identificar humanos en el universo de Rick y Morty.
 
-First, run the development server:
+## Características:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Se utiliza este marco moderno de React para una generación optimizada y un enrutamiento limpio.
+- **Material-UI**: Se asegura una interfaz de usuario atractiva y coherente.
+- **Paginación**: La aplicación no carga todos los personajes a la vez; en su lugar, utiliza un sistema de paginación para una navegación más eficiente.
+- **Integración con backend personalizado**: Se conecta con nuestro [backend específico](#enlace-al-repositorio-del-backend) para obtener los datos de los personajes.
+- **TypeScript**: Proporciona tipos estáticos para evitar errores en tiempo de ejecución y mejorar la calidad del código.
+- **Imagen optimizada**: Utiliza `next/image` para una carga de imagen más eficiente y una mejor experiencia del usuario.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estructura del código:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Componentes:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Home**: Es el componente principal que muestra la lista de personajes humanos. Utiliza el hook `useRouter` para la navegación y el hook `useState` para el manejo del estado local de la página actual.
 
-## Learn More
+### Funciones:
 
-To learn more about Next.js, take a look at the following resources:
+- **getServerSideProps**: Esta función asincrónica se encarga de obtener datos del backend antes de que se renderice la página, asegurando que el frontend siempre tenga datos frescos para mostrar.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cómo ejecutar el proyecto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clona el repositorio de GitHub.
+2. Navega hasta el directorio del frontend.
+3. Instala las dependencias con `npm install` o `yarn install`.
+4. Ejecuta el frontend con `npm run dev` o el comando equivalente que hayas configurado (o si prefieras `npm run build` y en seguida `npm run start`).
+5. Asegúrate de que el [backend](#enlace-al-repositorio-del-backend) esté funcionando en *localhost*, puerta *4000* para obtener los datos de los personajes.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Enlace al repositorio del backend
