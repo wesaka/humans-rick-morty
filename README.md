@@ -30,3 +30,4 @@ El frontend es la cara visible de nuestra herramienta para identificar humanos e
 5. Asegúrate de que el [backend](#enlace-al-repositorio-del-backend) esté funcionando en *localhost*, puerta *4000* para obtener los datos de los personajes.
 
 ## Enlace al repositorio del backend
+https://github.com/wesaka/backend-rick-morty
